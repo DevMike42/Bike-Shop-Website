@@ -1,10 +1,11 @@
 /* Main style variables */
 :root {
-  --primary-color: #1ea370b7;
-  --secondary-color: #ca8413;
+  --primary-color: #1c7c57e8;
+  --secondary-color: #0a1361;
   --light-color: #f4f4f4ef;
   --dark-color: #222;
-  --max-width: 1100px;
+  --black-color: black;
+  --max-width: 1300px;
 }
 
 * {
@@ -49,6 +50,13 @@ h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
 }
 
+.py-1 { padding: 1.5rem 0 }
+.py-2 { padding: 2rem 0 }
+.py-3 { padding: 3rem 0 }
+.p-3 { padding: 1.5rem }
+.p-3 { padding: 2rem }
+.p-3 { padding: 3rem }
+
 .btn {
   display: inline-block;
   border: none;
@@ -66,7 +74,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* NAVBAR */
 #main-nav {
-  /* background: black; */
+  background: var(--dark-color);
   color: var(--primary-color);
   position: sticky;
   top: 0;
@@ -82,8 +90,14 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
 }
 
-#main-nav h1 {
+#main-nav .logo i,
+#main-nav .logo h1 {
+  display: inline-block;
+}
+
+#main-nav .logo h1 {
   font-size: 2rem;
+  padding-left: 1rem;
 }
 
 #main-nav ul {
@@ -104,6 +118,14 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 }
 
+#main-nav ul li a:hover {
+  color: var(--primary-color);
+}
+
+#main-nav ul li a.current {
+  color: var(--primary-color);
+}
+
 /* SHOWCASE */
 #showcase {
   color: var(--light-color);
@@ -114,7 +136,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #showcase:before {
   content: '';
-  background: url('../img/showcase.jpeg') no-repeat center center/cover;
+  background: url(../img/showcase.jpeg) no-repeat center center/cover;
   position: absolute;
   top: 0;
   left: 0;
@@ -137,4 +159,126 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   font-size: 1.5rem;
   justify-self: right;
+}
+
+/* BRANDS SECTION */
+
+#brands .brands-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  /* height: 300px; */
+}
+
+#brands .brands-container #brand-box-1 {
+  color: var(--light-color);
+  background: var(--dark-color);
+  padding: 2rem;
+  position: relative;
+}
+
+#brands .brands-container #brand-box-1:before {
+  background: url(../img/santacruz.jpg) no-repeat center center/cover;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+}
+
+#brands .brands-container #brand-box-2 {
+  color: var(--light-color);
+  background: var(--dark-color);
+  padding: 2rem;
+  position: relative;
+}
+
+#brands .brands-container #brand-box-2:before {
+  background: url(../img/yeti.jpg) no-repeat center center/cover;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+}
+
+#brands .brands-container #brand-box-3 {
+  color: var(--light-color);
+  background: var(--dark-color);
+  padding: 2rem;
+  position: relative;
+}
+
+#brands .brands-container #brand-box-3:before {
+  background: url(../img/intense.jpg) no-repeat center center/cover;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+}
+
+#brands .brands-container #brand-box-4 {
+  color: var(--light-color);
+  background: var(--dark-color);
+  padding: 2rem;
+  position: relative;
+}
+
+#brands .brands-container #brand-box-4:before {
+  background: url(../img/pivot.jpg) no-repeat center center/cover;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+}
+
+#brands .brands-container .box-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+}
+
+#brands .brands-container .brand-box-content {
+  z-index: 1;
+  text-align: center;
+  align-items: center;
+
+}
+
+#main-footer {
+  background: var(--dark-color);
+  color: var(--light-color);
+}
+
+#main-footer #footer-banner {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+  align-items: center;
+  background: var(--black-color);
+  height: 100px;
+  
+}
+
+#main-footer #footer-banner .footer-banner-container i,
+#main-footer #footer-banner .footer-banner-container h1 {
+  display: inline-block;
+  color: var(--primary-color);
+}
+
+#main-footer .footer-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
