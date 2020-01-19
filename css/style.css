@@ -71,6 +71,32 @@ h1, h2, h3, h4, h5, h6 {
 .btn-primary { background: var(--primary-color); }
 .btn-secondary { background: var(--secondary-color); }
 
+/* card */
+.card {
+  color: var(--light-color);
+}
+
+.card img {
+  height: 300px;
+  /* width: auto; */
+  opacity: .9;
+}
+
+.card a:hover {
+  color: var(--primary-color);
+}
+
+/* Divider */
+.division {
+  padding-top: .75rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--light-color);
+  border-top: groove 2px var(--light-color);
+  border-bottom: groove 2px var(--light-color);
+  opacity: .4;
+}
+
 
 /* NAVBAR */
 #main-nav {
@@ -132,6 +158,7 @@ h1, h2, h3, h4, h5, h6 {
   background: var(--dark-color);
   padding: 2rem;
   position: relative;
+  margin-bottom: 3rem;
 }
 
 #showcase:before {
@@ -257,6 +284,14 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
+/* SERVICES SECTION */
+#services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+/* FOOTER */
 #main-footer {
   background: var(--dark-color);
   color: var(--primary-color);
