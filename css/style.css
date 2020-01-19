@@ -5,7 +5,7 @@
   --light-color: #f4f4f4ef;
   --dark-color: #222;
   --black-color: black;
-  --max-width: 1300px;
+  --max-width: 1200px;
 }
 
 * {
@@ -71,6 +71,32 @@ h1, h2, h3, h4, h5, h6 {
 .btn-primary { background: var(--primary-color); }
 .btn-secondary { background: var(--secondary-color); }
 
+/* card */
+.card {
+  color: var(--light-color);
+}
+
+.card img {
+  height: 300px;
+  /* width: auto; */
+  opacity: .9;
+}
+
+.card a:hover {
+  color: var(--primary-color);
+}
+
+/* Divider */
+.division {
+  padding-top: .75rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--light-color);
+  border-top: groove 2px var(--light-color);
+  border-bottom: groove 2px var(--light-color);
+  opacity: .4;
+}
+
 
 /* NAVBAR */
 #main-nav {
@@ -132,6 +158,7 @@ h1, h2, h3, h4, h5, h6 {
   background: var(--dark-color);
   padding: 2rem;
   position: relative;
+  margin-bottom: 3rem;
 }
 
 #showcase:before {
@@ -257,9 +284,21 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
+/* SERVICES SECTION */
+#services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+/* FOOTER */
 #main-footer {
   background: var(--dark-color);
-  color: var(--light-color);
+  color: var(--primary-color);
+}
+
+#main-footer a {
+  color: var(--primary-color);
 }
 
 #main-footer #footer-banner {
@@ -267,18 +306,48 @@ h1, h2, h3, h4, h5, h6 {
   grid-template-columns: 1fr;
   text-align: center;
   align-items: center;
-  background: var(--black-color);
-  height: 100px;
-  
 }
+
+#main-footer #footer-banner .footer-banner-container {
+  border-top: 2px groove var(--primary-color);
+  border-bottom: 2px groove var(--primary-color);
+  padding: .75rem 0;
+}
+
 
 #main-footer #footer-banner .footer-banner-container i,
 #main-footer #footer-banner .footer-banner-container h1 {
   display: inline-block;
-  color: var(--primary-color);
+}
+
+#main-footer #footer-banner .footer-banner-container h1 {
+  margin-left: 1.25rem;
+}
+
+#main-footer #social .social-container a {
+  padding: 0 1.25rem;
+  cursor: pointer;
 }
 
 #main-footer .footer-content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  font-size: 1.25rem;
+  /* margin-bottom: 1.5rem; */
 }
+
+#main-footer .footer-content > *:last-child {
+  grid-column: 1 / span 4;
+  text-align: center;
+  font-size: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+#main-footer .footer-content .logo i,
+#main-footer .footer-content .logo h4 {
+  display: inline-block;
+} 
+
+
+
