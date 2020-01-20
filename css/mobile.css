@@ -1,0 +1,111 @@
+
+
+@media(max-width: 768px) {
+  #main-nav .container {
+    grid-template-columns: 1fr;
+    grid-gap: 1.2rem;
+  }
+  
+  #main-nav ul,
+  #main-nav .logo {
+    justify-self: center;
+  }
+  
+  #main-nav ul li a {
+    padding: .75rem;
+  }
+  
+  #showcase .showcase-container {
+    height: 30vh;
+  }
+  
+  #brands .brands-container {
+    grid-template-columns: 1fr;
+    grid-gap: 1.2rem;
+    width: 80%;
+    margin: auto;
+  }
+  
+  #services {
+    grid-template-columns: 1fr;
+    grid-gap: 1.5rem;
+    width: 60%;
+  }
+  
+  .card {
+    margin: 1rem 0;
+    border-bottom: 1px groove #f4f4f4ef;
+    padding-bottom: 2rem;
+  }
+}
+
+@media(max-width: 600px) {
+  #main-nav .logo i,
+  #main-nav .logo h1 {
+    font-size: 1.5rem;
+  }
+
+  #main-nav ul li {
+    border: none;
+  }
+
+  #showcase .showcase-container {
+    height: 20vh;
+  }
+
+  #showcase .showcase-content {
+    font-size: .75rem;
+  }
+
+  #brands .brands-container #brand-box-1,
+  #brands .brands-container #brand-box-2,
+  #brands .brands-container #brand-box-3,
+  #brands .brands-container #brand-box-4 {
+    height: 200px;
+    /* margin: auto; */
+    padding: 1rem;
+  }
+
+  #brands .brands-container .brand-box-content {
+    font-size: .75rem;
+    /* margin: auto; */
+  }
+
+  .card {
+    font-size: .75rem;
+  }
+
+  .card img {
+    height: 200px;
+  }
+
+  
+  
+  #main-footer .footer-content {
+    grid-template-columns: 1fr;
+    grid-gap: 1.5rem;
+    /* text-align: left; */
+    width: 50%;
+    margin: auto;
+    font-size: 1.1rem;
+  }
+
+  #main-footer #footer-banner .footer-banner-container {
+    font-size: .75rem;
+  }
+
+  #main-footer .footer-content div:nth-child(1),
+  #main-footer .footer-content div:nth-child(2),
+  #main-footer .footer-content div:nth-child(3) {
+    border-bottom: 1px dotted #f4f4f4ef;
+  }
+
+  /* #main-footer .footer-content div > *:first-child,
+  #main-footer .footer-content div > *:nth-child(4) {
+    border: none;
+  } */
+
+  #main-footer .footer-content > *:last-child {
+    grid-column: 1;
+  }
+}
